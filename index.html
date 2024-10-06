@@ -1,22 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="script.js"></script>
-    <link rel="icon" type="image/svg" href="/img/logo.svg">
-    <title>Riadh Hajji</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="script.js" defer></script>
+  <link rel="icon" type="image/svg+png" href="/img/logo.svg">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Riadh Hajji | Portfolio</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "Q2UTIvFjMkhZkv0j8",
+      });
+    })();
+  </script>
+
 </head>
+
 <body>
-  <div class="profile">
-    <img src="/img/profile.png" alt="Riadh Hajji" class="profile-image">
-    <h1>Riadh Hajji</h1>
-    <h2>Software Engineer &amp; Web Developer</h2>
-    <p>I am a passionate and dedicated software engineer with a background in computer science and a strong foundation in web development. I have a keen eye for detail and a strong ability to create visually appealing and user-friendly interfaces.</p>
-    <a href="https://www.linkedin.com/in/riadh-hajji/" target="_blank" class="button">Connect on LinkedIn</a>
-    <a href="https://github.com/hajji-riadh" target="_blank" class="button">Check out my GitHub</a>
-    <a href="https://www.instagram.com/ria.hajji" target="_blank" class="button">Instagram</a>
+  <!-- Navigation -->
+  <header class="nav">
+    <h3>Riadh<span>Dev</span></h3>
+    <a href="#home" class="a">Home</a>
+    <a href="#about" class="a">About</a>
+    <a href="#skills" class="a">Skills</a>
+    <a href="#projects" class="a">Projects</a>
+    <a href="#contact" class="a">Contact</a>
+  </header>
+
+  <!-- dark mode -->
+  <img src="./img/moon.png" id="icon">
+
+  <!-- Navigation Mobile -->
+  <header class="nav-mobile">
+    <h3>Riadh<span>Dev</span></h3>
+    <a href="#home"><i class='bx bx-home'></i></a>
+    <a href="#about"><i class='bx bx-user'></i></a>
+    <a href="#skills"><i class='bx bx-layer'></i></a>
+    <a href="#projects"><i class='bx bx-grid-alt'></i></a>
+    <a href="#contact"><i class='bx bx-message'></i></a>
+  </header>
+
+  <!-- Home section -->
+  <section id="home" class="home">
+    <div class="cube-container">
+      <div class="cube">
+        <div class="face front">Web Developer</div>
+        <div class="face back">Front End Developer</div>
+        <div class="face right">Back End Developer</div>
+        <div class="face left">Full Stack Developer</div>
+        <div class="face top">MERN Developer</div>
+        <div class="face bottom">UI/UX Designer</div>
+      </div>
+    </div>
+    <h1>Hi, I'm Riadh Hajji, <span id="random-text"></span></h1>
+    <img src="./img/profile.png" alt="">
+  </section>
+
+  <!-- About section -->
+  <h3 class="p-proj">About Me</h3>
+  <section id="about">
+    <h2>Software Engineer & Web Developer</h2>
+    <p>
+      I am a Full Stack JavaScript Developer with a strong foundation in both frontend and backend technologies. <br>
+      I hold a certificate from PinguCoder, where I honed my skills in JavaScript, Node.js, and modern web development
+      frameworks. <br> <br>
+      Additionally, I have gained valuable backend development experience with Spring Boot through my training at The
+      Bridge. <br>
+      I am adept at building scalable web applications using a variety of technologies and frameworks, including
+      Express.js and MongoDB. <br>
+      My expertise extends to creating user-friendly interfaces with Chakra UI and Tailwind CSS, ensuring seamless user
+      experiences. <br>
+      I am passionate about developing efficient and maintainable code, always striving to stay updated with the latest
+      industry trends and best practices.
+      <br>
+      <br>
+      <br>
+      <strong>For more details :</strong>
+    </p>
+    <a href="./Cv.pdf" target="_blank" class="a home__button text-uppercase mt-4">Download CV</a>
+  </section>
+
+  <!-- Skills section -->
+  <h3 class="p-proj">Skills</h3>
+  <section id="skills" class="skills">
+    <div class="skill-main">
+      <div class="skill-left">
+        <h3>Technical Skills</h3>
+        <div class="skill-bar">
+          <div class="info">
+            <p>HTML 5</p>
+            <p>90%</p>
+          </div>
+          <div class="bar">
+            <span class="html"></span>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="info">
+            <p>CSS 3</p>
+            <p>82%</p>
+          </div>
+          <div class="bar">
+            <span class="css"></span>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="info">
+            <p>JavaScript</p>
+            <p>80%</p>
+          </div>
+          <div class="bar">
+            <span class="javascript"></span>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="info">
+            <p>Tailwind CSS</p>
+            <p>65%</p>
+          </div>
+          <div class="bar">
+            <span class="tailwind"></span>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="info">
+            <p>Git</p>
+            <p>90%</p>
+          </div>
+          <div class="bar">
+            <span class="git"></span>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="info">
+            <p>Figma</p>
+            <p>25%</p>
+          </div>
+          <div class="bar">
+            <span class="figma"></span>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="info">
+            <p>Design</p>
+            <p>20%</p>
+          </div>
+          <div class="bar">
+            <span class="design"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-right">
+        <h3>Frameworks</h3>
+        <div class="radial-bars">
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle cx="100" cy="100" r="80" class="progress-bar"></circle>
+              <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage"><img src="./img/mongodb.svg" alt="mongodb" width="60px"></div>
+            <div class="text" style="color: violet;">MongoDB</div>
+          </div>
+
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle cx="100" cy="100" r="80" class="progress-bar"></circle>
+              <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage"><img src="./img/express-js.svg" alt="React" width="60px"></div>
+            <div class="text" style="color: violet;">Express Js</div>
+          </div>
+
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle cx="100" cy="100" r="80" class="progress-bar"></circle>
+              <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage"><img src="./img/React.png" alt="React" width="60px"></div>
+            <div class="text" style="color: violet;">React Js</div>
+          </div>
+
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle cx="100" cy="100" r="80" class="progress-bar"></circle>
+              <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage"><img src="./img/Nodejs.png" alt="React" width="60px"></div>
+            <div class="text" style="color: violet;">Node Js</div>
+          </div>
+
+        </div>
+        <h3>Professional Skills</h3>
+        <div class="radial-bars">
+
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle cx="100" cy="100" r="80" class="progress-bar"></circle>
+              <circle class="path path-9" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">75%</div>
+            <div class="text" style="color: violet;"><strong>Front End</strong></div>
+          </div>
+
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle cx="100" cy="100" r="80" class="progress-bar"></circle>
+              <circle class="path path-10" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">65%</div>
+            <div class="text" style="color: violet;"><strong>Back End</strong></div>
+          </div>
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle cx="100" cy="100" r="80" class="progress-bar"></circle>
+              <circle class="path path-5" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">75%</div>
+            <div class="text" style="color: violet;">Problem Solving</div>
+          </div>
+
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle cx="100" cy="100" r="80" class="progress-bar"></circle>
+              <circle class="path path-6" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">80%</div>
+            <div class="text" style="color: violet;">Creativity</div>
+          </div>
+
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle cx="100" cy="100" r="80" class="progress-bar"></circle>
+              <circle class="path path-7" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">85%</div>
+            <div class="text" style="color: violet;">Connectivity</div>
+          </div>
+
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle cx="100" cy="100" r="80" class="progress-bar"></circle>
+              <circle class="path path-8" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">90%</div>
+            <div class="text" style="color: violet;"><strong>Team Work</strong></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Projects section -->
+  <h3 class="p-proj">Projects</h3>
+  <section id="projects" class="projects">
+    <div class="full-card">
+      <div class="card-container">
+        <div class="card">
+          <div class="front-content">
+            <img src="./img/project-img1.png" alt="">
+          </div>
+          <div class="content">
+            <p class="heading">Bee Beauty PFE</p>
+            <p>
+              As part of this project, i has developed the Bee Beauty website, which aims to simplify the acquisition
+              and booking of products online, thus offering customers an improved and easier shopping experience.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button><a href="./Bee Beauty PFE.pdf" class="">Details</a></button>
+    </div>
+
+
+  </section>
+
+  <!-- Contact section -->
+  <h3 class="p-proj">Contact Me</h3>
+  <section id="contact" class="contact">
+    <div class="card-contact">
+      <form class="form" onsubmit="sendMail(event)">
+        <div class="group">
+          <input placeholder="‎" type="text" id="name">
+          <label for="name">Name</label>
+        </div>
+        <div class="group">
+          <input placeholder="‎" type="email" id="email_id" name="email">
+          <label for="email">Email</label>
+        </div>
+        <div class="group">
+          <input placeholder="‎" type="text" id="subject" name="subject" required="">
+          <label for="subject">Subject</label>
+        </div>
+        <div class="group">
+          <textarea placeholder="‎" id="message" name="message" rows="5""></textarea>
+          <label for=" message">Your Message...</label>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+  </section>
+
+  <!-- Friends comments -->
+
+  <!-- Media links -->
+  <h3 class="p-proj">Social Media Links</h3>
+  <div class="social-buttons">
+    <a href="https://www.github.com/hajji-riadh" class="social-button github">
+      <svg class="cf-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="-2.5 0 19 19">
+        <path
+          d="M9.464 17.178a4.506 4.506 0 0 1-2.013.317 4.29 4.29 0 0 1-2.007-.317.746.746 0 0 1-.277-.587c0-.22-.008-.798-.012-1.567-2.564.557-3.105-1.236-3.105-1.236a2.44 2.44 0 0 0-1.024-1.348c-.836-.572.063-.56.063-.56a1.937 1.937 0 0 1 1.412.95 1.962 1.962 0 0 0 2.682.765 1.971 1.971 0 0 1 .586-1.233c-2.046-.232-4.198-1.023-4.198-4.554a3.566 3.566 0 0 1 .948-2.474 3.313 3.313 0 0 1 .091-2.438s.773-.248 2.534.945a8.727 8.727 0 0 1 4.615 0c1.76-1.193 2.532-.945 2.532-.945a3.31 3.31 0 0 1 .092 2.438 3.562 3.562 0 0 1 .947 2.474c0 3.54-2.155 4.32-4.208 4.548a2.195 2.195 0 0 1 .625 1.706c0 1.232-.011 2.227-.011 2.529a.694.694 0 0 1-.272.587z">
+        </path>
+      </svg>
+    </a>
+    <a href="https://www.linkedin.com/hajji-riadh" class="social-button linkedin">
+      <svg viewBox="0 -2 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Icons" stroke="none" stroke-width="1">
+          <g transform="translate(-702.000000, -265.000000)">
+            <path
+              d="M746,305 L736.2754,305 L736.2754,290.9384 C736.2754,287.257796 734.754233,284.74515 731.409219,284.74515 C728.850659,284.74515 727.427799,286.440738 726.765522,288.074854 C726.517168,288.661395 726.555974,289.478453 726.555974,290.295511 L726.555974,305 L716.921919,305 C716.921919,305 717.046096,280.091247 716.921919,277.827047 L726.555974,277.827047 L726.555974,282.091631 C727.125118,280.226996 730.203669,277.565794 735.116416,277.565794 C741.21143,277.565794 746,281.474355 746,289.890824 L746,305 L746,305 Z M707.17921,274.428187 L707.117121,274.428187 C704.0127,274.428187 702,272.350964 702,269.717936 C702,267.033681 704.072201,265 707.238711,265 C710.402634,265 712.348071,267.028559 712.41016,269.710252 C712.41016,272.34328 710.402634,274.428187 707.17921,274.428187 L707.17921,274.428187 L707.17921,274.428187 Z M703.109831,277.827047 L711.685795,277.827047 L711.685795,305 L703.109831,305 L703.109831,277.827047 L703.109831,277.827047 Z"
+              id="LinkedIn">
+            </path>
+          </g>
+        </g>
+      </svg>
+    </a>
+    <a href="https://www.facebook.com/ria.hajji" class="social-button facebook">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 310 310" xml:space="preserve">
+        <g id="XMLID_834_">
+          <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+        c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+        V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+        C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+        c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z"></path>
+        </g>
+      </svg>
+    </a>
+    <a href="https://www.instagram.com/ria.hajji" class="social-button instagram">
+      <svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Page-1" stroke="none" stroke-width="1">
+          <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)">
+            <g id="icons" transform="translate(56.000000, 160.000000)">
+              <path
+                d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792"
+                id="instagram-[#167]">
+
+              </path>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </a>
   </div>
+
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; 2024 Riadh Hajji. All rights reserved.</p>
+  </footer>
 </body>
+
 </html>
