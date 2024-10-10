@@ -17,6 +17,7 @@
   --on-background: rgba(255, 255, 255, 0.9);
   --on-background-alt: rgba(255, 255, 255, 0.7);
   --background: #000;
+  --box-shadow: 0 5px 20px 1px rgba(255, 255, 255, 255);
 }
 
 html {
@@ -52,7 +53,7 @@ h1 span {
 
 h2,
 h3 {
-  font-size: 32px;
+  font-size: 22px;
   font-weight: normal;
   color: var(--on-background-alt);
 }
@@ -75,10 +76,11 @@ p {
   font-size: 20px;
   letter-spacing: 3px;
   width: 100%;
-  background-color: var(--background);
+  height: 50px;
+  background-color: transparent;
   border: 1px solid #000000;
   border-radius: 20px;
-  box-shadow: 2px 2px 15px var(--box-shadow);
+  box-shadow: var(--box-shadow);
 }
 
 .nav h3 {
@@ -253,15 +255,7 @@ p {
   justify-content: space-around;
 }
 
-.full-card button {
-  width: 100%;
-  height: 50px;
-  border: none;
-  border-radius: 20px;
-  background-color: var(--secondary-color);
-}
-
-.full-card button:hover {
+.full-card .details:hover {
   background-color: #3366cc;
   color: var(--on-primary);
   cursor: pointer;
@@ -270,8 +264,16 @@ p {
 .full-card a {
   color: var(--on-background);
   text-decoration: none;
+  display: flex;
   border-bottom: 3px solid transparent;
   font-weight: bold;
+  width: 96%;
+  height: 30px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: var(--secondary-color);
 }
 
 .card-container {
@@ -896,6 +898,15 @@ footer {
     border-radius: 20px;
     box-shadow: 2px 2px 15px #000000;
   }
+  h2,
+  h3 {
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--on-background-alt);
+  }
+  .full-card a {
+    width: 90%;
+  }
   .skill-main {
     grid-template-columns: 1fr;
   }
@@ -965,6 +976,20 @@ footer {
     font-size: 12px;
     width: 100%;
   }
+  .a.home__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 20px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+  }
+
+  .full-card a {
+    width: 90%;
+  }
+
   .contact {
     width: 90%;
     height: 50vh;

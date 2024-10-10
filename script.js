@@ -55,13 +55,24 @@ function sendMail(event) {
 // dark mode
 var icon = document.getElementById("icon");
 
+// Check the saved theme on page load
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark-mode");
+  icon.src = "./img/sun.png";
+} else {
+  icon.src = "./img/moon.png";
+}
+
 icon.onclick = function () {
   document.body.classList.toggle("dark-mode");
-  if (icon.classList.contains("dark-mode")) {
+  if (document.body.classList.contains("dark-mode")) {
     icon.src = "./img/sun.png";
+    localStorage.setItem("theme", "dark");
   } else {
     icon.src = "./img/moon.png";
+    localStorage.setItem("theme", "light");
   }
 };
+
 
 
