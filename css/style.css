@@ -898,6 +898,20 @@ footer {
     border-radius: 20px;
     box-shadow: 2px 2px 15px #000000;
   }
+
+  .nav-mobile a{
+    width: 10%;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--on-background-alt);
+    box-shadow: var(--box-shadow);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+
   h2,
   h3 {
     font-size: 16px;
